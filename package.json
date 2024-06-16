@@ -1,0 +1,15 @@
+{
+  "name": "falah",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+    "start:frontend": "npm --prefix frontend run serve",
+    "start:backend": "npm --prefix backend start",
+    "install:frontend": "npm install --prefix frontend",
+    "install:backend": "npm install --prefix backend"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
